@@ -6,14 +6,15 @@ const Header = () => {
   return (
     <div className='header'>
     
-      <div className="logo">Vivekanand College</div>
+      
       <nav className='navbar'>
-        <Link to="/Home" className='nav-link'>Home</Link>
+        <div className="logo">Vivekanand College</div>
+        <Link to="/" className='nav-link'>Home</Link>
         <Link to="/About" className='nav-link'>About</Link>
          
         <Link to="/Courses"className='nav-link'>Courses</Link>
         <Link to="/Contact"className='nav-link'>Contact</Link>
-         <Link to="/Admission"className='nav-link'>Admission <button>Apply Now</button></Link>
+         <Link to="/Admission"className='nav-link'> <button>Apply Now</button></Link>
       </nav>
     
     </div>

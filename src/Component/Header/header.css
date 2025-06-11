@@ -12,6 +12,10 @@
 .logo{
     font-size: 28px;
     font-weight: bold;
+    height: auto;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
 }
 .navbar{
     display: flex;

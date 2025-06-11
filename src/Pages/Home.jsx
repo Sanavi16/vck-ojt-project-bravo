@@ -5,8 +5,11 @@ const Home = () => {
   return (
     <div>
       <Header/>
-    <div className="page-container about-background">
-      <div className="scroll-box">
+     <div className='root'>
+    <div className="page-container">
+    
+
+      
 
         {/* Header Section with Button */}
         <div className="header-image-container">
@@ -16,9 +19,11 @@ const Home = () => {
             className="header-img"
           />
           <div className="header-overlay">
-            <h1>Welcome to Vivekanand College!</h1>
-            <a href="#apply" className="apply-button">Apply Now!</a>
+            <h2> Welcome to Vivekanand College!</h2>
+            <p> Your journey to excellence starts here.</p>
+            <a className='apply' href='/Admission' data-discover='true'>Apply Now!</a>
           </div>
+        
         </div>
 
         {/* About Section */}
@@ -38,7 +43,7 @@ const Home = () => {
 
         <h2>Why Choose Vivekanand College?</h2>
         <hr />
-        <ul>
+        <ul className='nav-list'>
           <li>Legacy of Excellence: Decades of commitment to quality education.</li>
           <li>Experienced Faculty: Learn from renowned experts and passionate educators.</li>
           <li>Modern Facilities: Well-equipped labs, expansive library, and comfortable campus.</li>
@@ -48,7 +53,7 @@ const Home = () => {
 
         <h2>Our Values</h2>
         <hr />
-        <ul>
+        <ul className='nav-list2'>
           <li>Excellence in Education</li>
           <li>Integrity and Accountability</li>
           <li>Respect for Diversity</li>
@@ -58,19 +63,14 @@ const Home = () => {
         <h2>Campus Life & Facilities</h2>
         <hr />
 
-        <img
-          src="http://www.vivekanandcollege.org/images/header_top.jpg"
-          alt="Campus Life"
-          className="campus-img"
-          style={{ borderRadius: '16px' }}
-        />
+        
         <p className="caption">
           A vibrant, green, and modern campus designed to inspire learning and collaboration.
         </p>
-      </div>
+      </div> 
     </div>
-    
-</div>
+    </div>
+  
   );
 };
 
