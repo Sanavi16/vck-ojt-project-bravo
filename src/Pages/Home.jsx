@@ -9,7 +9,7 @@ const Home = () => {
        <div className="content"><div className="scroll-box">
          
 <div className="hero-section">
-<img alt="Vivekanand College Campus" className="hero-banner-image" src="/img/vck-img.jpg"/>
+<img alt="Vivekanand College Campus" className="hero-banner-image" src="/img/vck.jpg"/>
 <div className="hero-overlay-text">
 <h1>Welcome to Vivekanand College!</h1>
 <p>Your journey to excellence starts here.</p>
