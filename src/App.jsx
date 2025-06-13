@@ -6,7 +6,7 @@ import About from './Pages/About';
 import Courses from './Pages/Courses';
 import Contact from './Pages/Contact';
 import Admission from './Pages/Admission';
-import NotFound from './Pages/NotFound';
+
 import ChatbotComponent from './Component/Chatbot/ChatbotComponents';
 import DeveloperInfoPopup from './Component/DeveloperInfo/DeveloperInfoPopup';
 
@@ -37,7 +37,7 @@ const App = () => {
         <Route path='/Courses' element={<Courses />} />
         <Route path='/Contact' element={<Contact />} />
         <Route path='/Admission' element={<Admission />} />
-        <Route path='/NotFound' element={<NotFound />} />
+        
       </Routes>
       <ChatbotComponent/>
     </BrowserRouter>

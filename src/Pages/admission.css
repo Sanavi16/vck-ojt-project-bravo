@@ -5,7 +5,8 @@
 }
 
 
-.scroll-box{max-height: 500px;
+.scroll-box{
+  max-height: 500px;
   overflow-y: scroll;
   padding: 15px;
   background-color: #eef2f7;
