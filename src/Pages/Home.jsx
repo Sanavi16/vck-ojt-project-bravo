@@ -1,3 +1,4 @@
+import Footer from '../Component/Footer/Footer';
 import Header from '../Component/Header/Header';
 import './home.css';
 
@@ -37,6 +38,7 @@ const Home = () => {
  </div>
 </div>
 </div> 
+<Footer/>
     </div>
   
   );

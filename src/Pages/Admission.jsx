@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'; // <-- IMPORT Link HERE
 import Header from '../Component/Header/Header';
 import './admission.css';
+import Footer from '../Component/Footer/Footer';
 
 const Admission = () => {
   return (
@@ -69,6 +70,7 @@ const Admission = () => {
         </p>
       </div>
     </div>
+    <Footer/>
     </div>
   );
 };

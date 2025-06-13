@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home';
@@ -8,10 +8,28 @@ import Contact from './Pages/Contact';
 import Admission from './Pages/Admission';
 import NotFound from './Pages/NotFound';
 import ChatbotComponent from './Component/Chatbot/ChatbotComponents';
+import DeveloperInfoPopup from './Component/DeveloperInfo/DeveloperInfoPopup';
 
 const App = () => {
+ 
+  const [showPopup, setShowPopup] = useState(true);
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
+
   return (
-        
+        <>
+        <div>
+        {/* Your main application content */}
+        <DeveloperInfoPopup
+          show={showPopup}
+          onClose={handleClosePopup}
+          studentName="Sanavi Dattatray Kurane"
+          studentPhotoUrl="/img/sanavi.jpg" // Path to their photo
+          uniqueMessage="Learned so much during this OJT! This app showcases my independent coding and deployment skills"
+       />
+     </div>
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home />} />
@@ -23,6 +41,7 @@ const App = () => {
       </Routes>
       <ChatbotComponent/>
     </BrowserRouter>
+    </>
   );
 };
 
