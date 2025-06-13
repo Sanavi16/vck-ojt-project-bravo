@@ -183,7 +183,8 @@ const ChatbotComponent = () => {
               ))}
               {loading && (
                 <div className="message-row bot">
-                  <div className="avatar bot-avatar">🤖</div>
+                  <div
+                   className="avatar bot-avatar">🤖</div>
                   <p className="bot-message loading-indicator">Typing...</p>
                 </div>
               )}

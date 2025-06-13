@@ -1,11 +1,12 @@
 import Header from '../Component/Header/Header';
-import './pages.css';
+import './contact.css';
 
 const Contact = () => {
   return (
-    <div>
+    <div >
     <Header/>
-     <div>
+     <div className='page-container about-background'>
+     <div className='scroll-box'>
     <h1>Contact Us</h1>
       <p>We'd love to hear from you! Whether you have questions about admissions, programs, or campus life, our team is here to help.</p>
       <h2>General Enquiries</h2>
@@ -43,6 +44,7 @@ const Contact = () => {
       <p>
         [A contact form with fields for Name, Email, Subject, Message can be added here.]
       </p>
+    </div>
     </div>
     </div>
   );

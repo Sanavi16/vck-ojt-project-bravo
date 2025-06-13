@@ -1,14 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // <-- IMPORT Link HERE
 import Header from '../Component/Header/Header';
-import './pages.css';
+import './admission.css';
 
 const Admission = () => {
   return (
     <div>
       <Header />
-      <div className="page-container" style={{ overflow: "auto" }}>
-        <h1>Admissions at Vivekanand College</h1>
+      <div className="page-container admissions-background">
+        <div className="scroll-box ">
+        
+          <h1>Admissions at Vivekanand College</h1>
         <p>
           Welcome to the Admissions page of Vivekanand College! We are delighted
           you're considering joining our vibrant academic community. Our admission
@@ -52,7 +54,7 @@ const Admission = () => {
           </tbody>
         </table>
         <h2>Application Process</h2>
-        <ol>
+        <ol className='text'>
           <li><b>Online Application:</b> Fill out the application form available on our portal.</li>
           <li><b>Document Submission:</b> Upload scanned copies of required documents (mark sheets, ID proof, etc.).</li>
           <li><b>Entrance Exam (if applicable):</b> Appear for the college's entrance examination.</li>
@@ -66,6 +68,7 @@ const Admission = () => {
           <Link to="/Contact">Contact us</Link> directly.
         </p>
       </div>
+    </div>
     </div>
   );
 };

@@ -1,18 +1,22 @@
 import Header from '../Component/Header/Header';
-import './pages.css';
+import './courses.css';
+
 
 const Courses = () => {
   return (
     <div>
       <Header />
-      <div className="page-container">
+      <div className="page-container about-background">
+        <div className='scroll-box'>
+        
+        
         <h1>Our Academic Programs</h1>
         <p>
           Vivekanand College offers a comprehensive range of undergraduate and postgraduate programs designed to equip students with the knowledge and skills demanded by today's dynamic global landscape. Our curriculum is regularly updated to reflect industry trends and academic advancements.
         </p>
 
         <h2>Undergraduate Programs (UG)</h2>
-        <ul>
+        <ul className='list'>
           <li>
             <b>Bachelor of Science (B.Sc.)</b>
             <ul>
@@ -23,7 +27,7 @@ const Courses = () => {
           </li>
           <li>
             <b>Bachelor of Commerce (B.Com)</b>
-            <ul>
+            <ul className='list'>
               <li>Accounting & Finance (3 years)</li>
               <li>Banking & Insurance (3 years)</li>
             </ul>
@@ -38,7 +42,7 @@ const Courses = () => {
         </ul>
 
         <h2>Postgraduate Programs (PG)</h2>
-        <ul>
+        <ul className='list'>
           <li>
             <b>Master of Science (M.Sc.)</b>
             <ul>
@@ -91,7 +95,7 @@ const Courses = () => {
           In addition to traditional degree programs, we offer various certificate and diploma courses in areas like Digital Marketing, Web Development, Data Analytics, and Soft Skills Development, providing specialized training for career enhancement.
         </p>
 
-        
+        </div>
       </div>
     </div>
   );
