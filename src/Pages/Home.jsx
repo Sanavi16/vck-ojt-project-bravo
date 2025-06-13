@@ -27,7 +27,7 @@ const Home = () => {
 <li>**Holistic Development:** Focus on co-curricular activities, sports, and community service.</li><li>**Strong Placements:** Excellent career opportunities with leading companies.</li>
 </ul>
 <h2>Campus Life &amp; Facilities</h2>
-<div class="image-gallery">
+<div className="image-gallery">
 <img alt="Students studying in library" src="/img/campus-life.jpg"/>
 <img alt="Students on campus ground" src="/img/students-studying.jpeg"/>
 </div>
