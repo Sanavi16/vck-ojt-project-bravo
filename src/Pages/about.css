@@ -1,34 +1,35 @@
-html, body, #root {
-    font-family: Arial, sans-serif;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    background-color: #3ddad7;
+.about-background {
+  background-color: #3ddad7;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 20px;
 }
 
-.page-container {
-    background-color: #3ddad7;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 40px 20px;
-    overflow-y: auto;
+.about-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.scroll-box {
-    background-color: #ffffff;
-    max-height: 500px;
-    overflow-y: auto;
-    padding: 20px;
-    border: 1px solid #bbb;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    max-width: 960px;
-    width: 100%;
-    text-align: left;
+.about-box {
+  background-color: white;
+  border-radius: 10px;
+  padding: 40px;
+  max-width: 1000px;
+  width: 90%;
+  height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.text1, .text2 {
-    text-align: left;
+.about-title {
+  text-align: center;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.ul1{
+  text-align: left;
 }

@@ -7,76 +7,48 @@ const About = () => {
   return (
     <div>
       <Header />
-      <div className="page-container">
-        <div className="scroll-box">
-
-          {/* About Section */}
-          <h1 className="page-title">Our Academic Programs</h1>
-
+      <div className="about-container about-background">
+        <div className="about-box">
+          <h1 className="about-title">About Vivekanand College</h1>
           <p>
-            Vivekanand College offers a comprehensive range of undergraduate and postgraduate programs designed to equip students with the knowledge and skills demanded by today's dynamic global landscape. Our curriculum is regularly updated to reflect industry trends and academic advancements.
+            Vivekanand College stands as a beacon of knowledge and integrity, committed to delivering transformative
+            education since its inception in <strong>[Year of Establishment, e.g., 1980]</strong>. Located in the
+            bustling heart of <strong>[City/Area, e.g., Chembur, Mumbai]</strong>, our college has consistently strived
+            to uphold the highest standards of academic rigor and ethical values.
+          </p>
+          <p>
+            Our vision is to empower students with critical thinking skills, a global perspective, and a strong sense
+            of social responsibility. We aim to nurture individuals who are not only successful in their careers but
+            also contributing members of society.
           </p>
 
-          <h2>Our Academic Programs</h2>
-          <p>
-            At Vivekanand College, we believe in a vibrant learning environment that extends beyond textbooks. Our
-            state-of-the-art facilities, experienced faculty, and diverse student community create a unique ecosystem
-            where curiosity thrives and future leaders are shaped.
-          </p>
-
-          <h2>Discover Campus Life</h2>
           <video width="100%" height="auto" controls>
-            <source src="/video/college-tour.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
+              <source src="/video/college-tour.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
           </video>
 
-          <hr />
 
-          <h2 className='text1'>Undergraduate Programs (UG)</h2>
+          <h2>Our Mission</h2>
           <hr />
-          <ul className='text2'>
-            <li>Bachelor of Science (B.Sc.)</li>
-            <ul>
-              <li>Computer Science (3 years)</li>
-              <li>Information Technology (3 years)</li>
-              <li>Biotechnology (3 years)</li>
-            </ul>
-            <li>Bachelor of Commerce (B.Com)</li>
-            <ul>
-              <li>Accounting & Finance (3 years)</li>
-              <li>Banking & Insurance (3 years)</li>
-            </ul>
-            <li>Bachelor of Arts (B.A.)</li>
-            <ul>
-              <li>English Literature (3 years)</li>
-              <li>Psychology (3 years)</li>
-            </ul>
+          <ul className="ul1">
+            <li>To provide high-quality, accessible education across various disciplines.</li>
+            <li>To foster research, innovation, and creativity among students and faculty.</li>
+            <li>To cultivate a diverse and inclusive learning environment.</li>
+            <li>To instill strong ethical values and leadership qualities.</li>
           </ul>
 
-          <h2 className='text1'>Postgraduate Programs (PG)</h2>
+          <h2>Our Values</h2>
           <hr />
-          <ul className='text2'>
-            <li>Master of Science (M.Sc.)</li>
-            <ul>
-              <li>Computer Science (2 years)</li>
-              <li>Information Technology (2 years)</li>
-            </ul>
-            <li>Master of Commerce (M.Com) (2 years)</li>
-            <li>Master of Arts (M.A.) (2 years)</li>
+          <ul>
+            <li>Integrity and transparency in all endeavors.</li>
+            <li>Commitment to academic and professional excellence.</li>
+            <li>Respect for diversity and human dignity.</li>
+            <li>Community engagement and social responsibility.</li>
           </ul>
-
-          <h2>Program Details & Fee Structure (Annual)</h2>
-          <hr />
-
-          <h2>Specialized & Vocational Courses</h2>
-          <hr />
-          <p>
-            In addition to traditional degree programs, we offer various certificate and diploma courses in areas like Digital Marketing, Web Development, Data Analytics, and Soft Skills Development, providing specialized training for career enhancement.
-          </p>
-
         </div>
       </div>
-      <Footer/>
+      
+      <Footer />
     </div>
   );
 };

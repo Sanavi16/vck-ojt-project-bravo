@@ -1,44 +1,76 @@
 import Footer from '../Component/Footer/Footer';
 import Header from '../Component/Header/Header';
 import './home.css';
+import { Link } from 'react-router-dom';
+
 
 const Home = () => {
   return (
-    <div className='main-container'>
-     <Header/>
-       <div className="content"><div className="scroll-box">
-         
-<div className="hero-section">
-<img alt="Vivekanand College Campus" className="hero-banner-image" src="/img/vck.jpg"/>
-<div className="hero-overlay-text">
-<h1>Welcome to Vivekanand College!</h1>
-<p>Your journey to excellence starts here.</p>
-<a className="btn hero-btn" href="/Admissions" data-discover="true">Apply Now!</a>
- </div>
-</div>
-<p>**Vivekanand College<b></b> is a premier educational institution dedicated to fostering academic excellence, innovation, and holistic development. Established in [Year of Establishment, e.g., 1980], we have proudly served generations of students, empowering them to achieve their full potential.</p>
+ <div className="home-wrapper">
+      <Header />
 
-<p>At Vivekanand College, we believe in a vibrant learning environment that extends beyond textbooks. Our state-of-the-art facilities, experienced faculty, and diverse student community create a unique ecosystem where curiosity thrives and future leaders are shaped.</p>
-<h2>Why Choose Vivekanand College?</h2>
-<ul>
-<li>**Legacy of Excellence:** Decades of commitment to quality education.</li>
-<li>**Experienced Faculty:** Learn from renowned experts and passionate educators.</li>
-<li>**Modern Facilities:** Well-equipped labs, expansive library, and comfortable campus.</li>
-<li>**Holistic Development:** Focus on co-curricular activities, sports, and community service.</li><li>**Strong Placements:** Excellent career opportunities with leading companies.</li>
-</ul>
-<h2>Campus Life &amp; Facilities</h2>
-<div className="image-gallery">
-<img alt="Students studying in library" src="/img/campus-life.jpg"/>
-<img alt="Students on campus ground" src="/img/students-studying.jpeg"/>
-</div>
-<p>Explore our vibrant campus and state-of-the-art facilities designed to enhance your learning experience and personal growth.</p>
-<div className="call-to-action">
-<p>Ready to explore our courses?</p>
-<a className="btn" href="/Courses" data-discover="true">Explore Courses</a>
- </div>
-</div>
-</div> 
-<Footer/>
+      <div className="home-container">
+        <div className="scroll-box">
+          {/* Welcome Banner Section */}
+          <div className="header-image-container">
+            <img
+                src="/img/vck.jpg"
+                alt="Welcome Banner"
+                className="header-img"
+            />
+
+            <div className="header-overlay">
+              <h1>Welcome to Vivekanand College!</h1>
+              <Link to="/Admission" ><button className='apply-button'>Apply Now!</button></Link>
+            </div>
+          </div>
+
+          {/* About Section */}
+          <h1 className="page-title">About Vivekanand College</h1>
+          <p>
+            <strong>Vivekanand College</strong> is a premier educational institution dedicated to fostering academic
+            excellence, innovation, and holistic development. Established in 1980, we have proudly served generations of
+            students, empowering them to achieve their full potential.
+          </p>
+          <p>
+            At Vivekanand College, we believe in a vibrant learning environment that extends beyond textbooks. Our
+            state-of-the-art facilities, experienced faculty, and diverse student community create a unique ecosystem
+            where curiosity thrives and future leaders are shaped.
+          </p>
+
+          {/* Why Choose Us */}
+          <h2>Why Choose Vivekanand College?</h2>
+          <ul>
+            <li>Legacy of Excellence: Decades of commitment to quality education.</li>
+            <li>Experienced Faculty: Learn from renowned experts and passionate educators.</li>
+            <li>Modern Facilities: Well-equipped labs, expansive library, and comfortable campus.</li>
+            <li>Holistic Development: Focus on co-curricular activities, sports, and community service.</li>
+            <li>Strong Placements: Excellent career opportunities with leading companies.</li>
+          </ul>
+
+          {/* Our Values */}
+          <h2>Our Values</h2>
+          <ul>
+            <li>Excellence in Education</li>
+            <li>Integrity and Accountability</li>
+            <li>Respect for Diversity</li>
+            <li>Community Engagement</li>
+          </ul>
+
+          {/* Campus Section */}
+          <h2>Campus Life & Facilities</h2>
+          <img
+            src="/img/students-studying.jpeg"
+            alt="Campus Life"
+            className="campus-img"
+          />
+          <p className="caption">
+            A vibrant, green, and modern campus designed to inspire learning and collaboration.
+          </p>
+        </div>
+      </div>
+
+      <Footer />
     </div>
   
   );
